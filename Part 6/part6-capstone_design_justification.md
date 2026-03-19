@@ -1,6 +1,6 @@
 6.2 Design Justification	
 
-Storage Systems
+## Storage Systems
 
 To meet the four goals, a combination of storage systems is used, each optimized for a specific type of workload-
 
@@ -13,7 +13,7 @@ To meet the four goals, a combination of storage systems is used, each optimized
 4. Real time ICU vitals streaming
 	A Real-Time Database is used. These systems are optimized for high-frequency data ingestion and time-based queries. ICU devices 	continuously push data, which is stored with timestamps and can trigger alerts or be visualized in dashboards.
 
-OLTP vs OLAP Boundary
+## OLTP vs OLAP Boundary
 
 The OLTP (Online transaction processing) system includes all real time, operational data handling. This covers Patient record updates, billing transactions and ICU real time vitals ingestion. These systems are optimized for fast inserts, updates, and low latency queries.
 
@@ -23,7 +23,7 @@ After pipeline - OLAP (historical analytical systems)
 This separation ensures that heavy analytical queries do not affect real time hospital operations.
 
 
-Trade Offs
+## Trade Offs
 
 A key trade-off in this design is between real-time performance and data consistency.
 
