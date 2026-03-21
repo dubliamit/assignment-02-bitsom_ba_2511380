@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS dim_date;
 --## dim_date
+DROP TABLE IF EXISTS dim_date;
 CREATE TABLE dim_date (
     date_id INT PRIMARY KEY,
     full_date DATE,
@@ -25,7 +25,6 @@ CREATE TABLE dim_product (
 );
 
 --## Fact_table
-
 DROP TABLE IF EXISTS fact_sales;
 CREATE TABLE fact_sales (
 	sales_id INT PRIMARY KEY,
